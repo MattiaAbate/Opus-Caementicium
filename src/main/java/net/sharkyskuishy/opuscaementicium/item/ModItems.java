@@ -1,8 +1,6 @@
 package net.sharkyskuishy.opuscaementicium.item;
 
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, OpusCaementicium.MOD_ID);
 
     public static final RegistryObject<Item> MORTAR_BUCKET = ITEMS.register("mortar_bucket",
-        () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse("opuscaementicium:mortar_bucket")))));
+        () -> new Item(new Item.Properties().setId(ITEMS.key("mortar_bucket"))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
