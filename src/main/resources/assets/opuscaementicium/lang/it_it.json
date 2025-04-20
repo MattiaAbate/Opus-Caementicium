@@ -1,3 +1,6 @@
 {
-  "item.opuscaementicium.mortar_bucket": "Secchio di malta"
+  "item.opuscaementicium.mortar_bucket": "Secchio di malta",
+  "item.opuscaementicium.pozzolan_ball": "Zolla di pozzolana",
+
+  "item.opuscaementicium.pozzolan": "Pozzolana"
 }

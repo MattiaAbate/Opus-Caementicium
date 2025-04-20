@@ -13,6 +13,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.sharkyskuishy.opuscaementicium.block.ModBlocks;
 import net.sharkyskuishy.opuscaementicium.item.ModItems;
 import org.slf4j.Logger;
 
@@ -34,6 +35,7 @@ public class OpusCaementicium {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,6 +52,11 @@ public class OpusCaementicium {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.MORTAR_BUCKET);
+            event.accept(ModItems.POZZOLAN_BALL);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.POZZOLAN);
         }
     }
 
