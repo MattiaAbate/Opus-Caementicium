@@ -20,8 +20,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POZZOLAN = registerBlock("pozzolan",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2.4f)
-                    .requiresCorrectToolForDrops()
+                    .strength(0.6f)
                     .sound(SoundType.GRAVEL)
                     .setId(BLOCKS.key("pozzolan"))));
 
