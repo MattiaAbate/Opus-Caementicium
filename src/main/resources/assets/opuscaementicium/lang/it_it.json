@@ -2,5 +2,7 @@
   "item.opuscaementicium.mortar_bucket": "Secchio di malta",
   "item.opuscaementicium.pozzolan_ball": "Zolla di pozzolana",
 
-  "item.opuscaementicium.pozzolan": "Pozzolana"
+  "item.opuscaementicium.pozzolan": "Pozzolana",
+
+  "creative_tab.opuscaementicium.opus_caementicium_items_tab": "Oggetti Opus Caementicium"
 }

@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sharkyskuishy.opuscaementicium.block.ModBlocks;
+import net.sharkyskuishy.opuscaementicium.item.ModCreativeModeTabs;
 import net.sharkyskuishy.opuscaementicium.item.ModItems;
 import org.slf4j.Logger;
 
@@ -33,6 +34,8 @@ public class OpusCaementicium {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

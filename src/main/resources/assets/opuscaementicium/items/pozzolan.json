@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "opuscaementicium:items/pozzolan"
+    "model": "opuscaementicium:block/pozzolan"
   }
 }
