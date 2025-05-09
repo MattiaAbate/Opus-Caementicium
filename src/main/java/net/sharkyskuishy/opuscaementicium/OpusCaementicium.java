@@ -59,6 +59,7 @@ public class OpusCaementicium {
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.QUICKLIME);
             event.accept(ModBlocks.POZZOLAN);
         }
     }
