@@ -20,8 +20,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> QUICKLIME = registerBlock("quicklime",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.5f)
+                    .strength(1.5f, 1f)
                     .sound(SoundType.DRIPSTONE_BLOCK)
+                    .requiresCorrectToolForDrops()
                     .setId(BLOCKS.key("quicklime"))));
 
     public static final RegistryObject<Block> POZZOLAN = registerBlock("pozzolan",

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "opuscaementicium:quicklime",
+    "minecraft:water_bucket",
+    [
+      "minecraft:sand",
+      "minecraft:red_sand",
+      "minecraft:gravel",
+      "opuscaementicium:pozzolan_ball"
+    ]
+  ],
+  "result": {
+    "id": "opuscaementicium:mortar_bucket",
+    "count": 1
+  }
+}
