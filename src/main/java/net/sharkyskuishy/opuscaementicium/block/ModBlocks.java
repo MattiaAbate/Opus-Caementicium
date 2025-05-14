@@ -20,7 +20,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> QUICKLIME = registerBlock("quicklime",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.6f)
+                    .strength(1.5f)
                     .sound(SoundType.DRIPSTONE_BLOCK)
                     .setId(BLOCKS.key("quicklime"))));
 
@@ -37,7 +37,9 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(ModItems.ITEMS.key("pozzolan"))));
+        ModItems.ITEMS.register(name, () ->
+                new BlockItem(block.get(), new Item.Properties().setId(ModItems.ITEMS.key(name)))
+        );
     }
 
     public static void register(IEventBus eventBus) {
