@@ -37,7 +37,6 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(ModItems.ITEMS.key("quicklime"))));
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(ModItems.ITEMS.key("pozzolan"))));
     }
 
