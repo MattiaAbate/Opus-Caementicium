@@ -27,16 +27,16 @@ public class ModItems {
 
     private static RegistryObject<Item> registerItem(String name, Item.Properties properties) {
         return ITEMS.register(name, () ->
-                new Item(properties) {
+                new Item(properties) /*{
                     @Override
                     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
                         if (Screen.hasShiftDown()) {
-                            tooltip.add(Component.translatable("tooltip.opuscaementicium." + name + "_detailed"));
+                            tooltip.add(Component.translatable("tooltip.opuscaementicium." + name));
                         } else {
-                            tooltip.add(Component.translatable("tooltip.opuscaementicium." + name + "_hint"));
+                            tooltip.add(Component.translatable("tooltip.opuscaementicium.hint"));
                         }
                     }
-                });
+                }*/);
     }
 
     public static void register(IEventBus eventBus) {
