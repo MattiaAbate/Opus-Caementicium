@@ -27,7 +27,7 @@ public class ModItems {
 
     private static RegistryObject<Item> registerItem(String name, Item.Properties properties) {
         return ITEMS.register(name, () ->
-                new Item(properties) /*{
+                new Item(properties) {
                     @Override
                     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
                         if (Screen.hasShiftDown()) {
@@ -36,7 +36,7 @@ public class ModItems {
                             tooltip.add(Component.translatable("tooltip.opuscaementicium.hint"));
                         }
                     }
-                }*/);
+                });
     }
 
     public static void register(IEventBus eventBus) {
