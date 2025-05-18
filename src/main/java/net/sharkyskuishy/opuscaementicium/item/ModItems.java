@@ -40,9 +40,9 @@ public class ModItems {
                 @Override
                 public void appendHoverText(ItemStack pStack, TooltipContext pContext, TooltipDisplay pTooltipDisplay, Consumer<Component> pTooltipAdder, TooltipFlag pFlag) {
                     if (Screen.hasShiftDown()) {
-                        pTooltipComponents.add(Component.translatable("tooltip.opuscaementicium.mortar_bucket.shift_down"));
+                        pTooltipAdder.accept(Component.literal("tooltip.opuscaementicium.mortar_bucket"));
                     } else {
-                        pTooltipComponents.add(Component.translatable("tooltip.opuscaementicium.mortar_bucket"));
+                        pTooltipAdder.accept(Component.literal("tooltip.opuscaementicium.hint"));
                     }
 
                     super.appendHoverText(pStack, pContext, pTooltipDisplay, pTooltipAdder, pFlag);
