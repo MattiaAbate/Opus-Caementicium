@@ -32,32 +32,34 @@ import java.util.function.Consumer;
 
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, OpusCaementicium.MOD_ID);
+	public static final DeferredRegister<Item> ITEMS =
+			DeferredRegister.create(ForgeRegistries.ITEMS, OpusCaementicium.MOD_ID);
 
-    public static final RegistryObject<Item> MORTAR_BUCKET = ITEMS.register("mortar_bucket",
-            () -> new Item(new Item.Properties().setId(ITEMS.key("mortar_bucket"))) {
-                @Override
-                public void appendHoverText(ItemStack pStack, TooltipContext pContext, TooltipDisplay pTooltipDisplay, Consumer<Component> pTooltipAdder, TooltipFlag pFlag) {
-                    if (Screen.hasShiftDown()) {
-                        pTooltipAdder.accept(Component.literal("tooltip.opuscaementicium.mortar_bucket"));
-                    } else {
-                        pTooltipAdder.accept(Component.literal("tooltip.opuscaementicium.hint"));
-                    }
+	public static final RegistryObject<Item> MORTAR_BUCKET = ITEMS.register("mortar_bucket",
+			() -> new Item(new Item.Properties().setId(ITEMS.key("mortar_bucket")))
+	);
 
-                    super.appendHoverText(pStack, pContext, pTooltipDisplay, pTooltipAdder, pFlag);
-                }
-            });
+	public static final RegistryObject<Item> POZZOLAN_BALL = ITEMS.register("pozzolan_ball",
+			() -> new Item(new Item.Properties().setId(ITEMS.key("pozzolan_ball")))
+	);
 
-    public static final RegistryObject<Item> POZZOLAN_BALL = ITEMS.register("pozzolan_ball",
-            () -> new Item(new Item.Properties().setId(ITEMS.key("pozzolan_ball"))));
+	private static RegistryObject<Item> registerItem(String name, Item.Properties properties) {
+		return ITEMS.register(name, () ->
+				new Item(properties) {
+					@Override
+					public void appendHoverText(ItemStack pStack, TooltipContext pContext, TooltipDisplay pTooltipDisplay, Consumer<Component> pTooltipAdder, TooltipFlag pFlag) {
+						if (Screen.hasShiftDown()) {
+							pTooltipAdder.accept(Component.translatable("tooltip.opuscaementicium." + name));
+						} else {
+							pTooltipAdder.accept(Component.translatable("tooltip.opuscaementicium.hint"));
+						}
 
-    private static RegistryObject<Item> registerItem(String name, Item.Properties properties) {
-        return ITEMS.register(name, () ->
-                new Item(properties));
-    }
+						super.appendHoverText(pStack, pContext, pTooltipDisplay, pTooltipAdder, pFlag);
+					}
+				});
+	}
 
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
+	public static void register(IEventBus eventBus) {
+		ITEMS.register(eventBus);
+	}
 }

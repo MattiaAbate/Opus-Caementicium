@@ -5,5 +5,8 @@
   "item.opuscaementicium.quicklime": "Viva calx",
   "item.opuscaementicium.pozzolan": "Pulvis Puteolana",
 
-  "creative_tab.opuscaementicium.opus_caementicium_items_tab": "Opui Caementicii res"
+  "creative_tab.opuscaementicium.opus_caementicium_items_tab": "Opui Caementicii res",
+
+  "tooltip.opuscaementicium.hint": "Press §eShift§r for more Information!",
+  "tooltip.opuscaementicium.mortar_bucket": "Mortar Bucket tooltip..."
 }
