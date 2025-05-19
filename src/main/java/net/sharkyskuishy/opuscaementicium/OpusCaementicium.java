@@ -1,6 +1,7 @@
 package net.sharkyskuishy.opuscaementicium;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,8 @@ public class OpusCaementicium {
 	public static final String MOD_ID = "opuscaementicium";
 	// Directly reference a slf4j logger
 	private static final Logger LOGGER = LogUtils.getLogger();
+
+	public static final String HINT_TOOLTIP_KEY = "tooltip." + MOD_ID + ".hint";
 
 	public OpusCaementicium(FMLJavaModLoadingContext context) {
 		IEventBus modEventBus = context.getModEventBus();

@@ -7,6 +7,8 @@
 
   "creative_tab.opuscaementicium.opus_caementicium_items_tab": "Oggetti Opus Caementicium",
 
-  "tooltip.opuscaementicium.hint": "Press §eShift§r for more Information!",
-  "tooltip.opuscaementicium.mortar_bucket": "Mortar Bucket tooltip..."
+  "tooltip.opuscaementicium.hint": "Premi §eShift§r per più informazioni!",
+  "tooltip.opuscaementicium.mortar_bucket": "Il Secchio di malta è uno degli ingredienti necessari per la creazione dei blocchi di §oopus caementicium§r ed è ottenibile con Calce viva, Secchio d'acqua e Sabbia (o anche Sabbia rossa, Zolla di pozzolana o Ghiaia).",
+  "tooltip.opuscaementicium.pozzolan": "",
+  "tooltip.opuscaementicium.pozzolan_ball": "La Zolla di pozzolana è uno degli ingredienti necessari per la fabbricazione del Secchio di malta, insieme al Secchio d'acqua e Mattoni (o anche Pietra o Tufo)."
 }
