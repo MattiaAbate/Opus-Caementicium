@@ -1,13 +1,6 @@
 package net.sharkyskuishy.opuscaementicium.block;
 
-import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,8 +11,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.sharkyskuishy.opuscaementicium.OpusCaementicium;
 import net.sharkyskuishy.opuscaementicium.item.ModItems;
 
-import javax.annotation.Nullable;
-import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -49,7 +40,7 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () ->
-                new BlockItem(block.get(), new Item.Properties().setId(ModItems.ITEMS.key(name)))
+                new ModBlockItem(block.get(), new Item.Properties().setId(ModItems.ITEMS.key(name)))
         );
     }
 

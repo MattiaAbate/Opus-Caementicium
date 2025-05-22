@@ -8,6 +8,8 @@
   "creative_tab.opuscaementicium.opus_caementicium_items_tab": "Opus Caementicium Items",
 
   "tooltip.opuscaementicium.hint": "Press §eShift§r for more Information!",
-  "tooltip.opuscaementicium.mortar_bucket": "Mortar Bucket is one of the ingredients required to craft the §oopus caementicium§r blocks, obtainable with Quicklime, Water Bucket and Sand (or even Red Sand, Pozzolan ball or Gravel).",
-  "tooltip.opuscaementicium.pozzolan_ball": "Pozzolan Ball is one of the ingredients required to craft the Mortar Bucket, along with Water Bucket and Bricks (or even Stone or Tuff)."
+  "tooltip.opuscaementicium.quicklime": "Quicklime is a block obtainable smelting the Dripstone Block in a furnace. It's used to craft the Mortar Bucket.",
+  "tooltip.opuscaementicium.pozzolan": "Pozzolan is a powdery block that can be found near lava lakes and more. It is used to get Pozzolan Ball.",
+  "tooltip.opuscaementicium.pozzolan_ball": "Pozzolan Ball is one of the ingredients required to craft the Mortar Bucket.",
+  "tooltip.opuscaementicium.mortar_bucket": "Mortar Bucket is one of the ingredients required to craft the §oopus caementicium§r blocks, obtainable with Quicklime, Water Bucket and Sand (or even Red Sand, Pozzolan ball or Gravel)."
 }
