@@ -65,6 +65,10 @@ public class OpusCaementicium {
 			event.accept(ModBlocks.QUICKLIME);
 			event.accept(ModBlocks.POZZOLAN);
 		}
+
+		if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			event.accept(ModBlocks.OPUS_QUADRATUM);
+		}
 	}
 
 	// You can use SubscribeEvent and let the Event Bus discover methods to call

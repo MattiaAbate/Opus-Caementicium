@@ -15,13 +15,14 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, OpusCaementicium.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> OPUS_CAEMENTICIUM_ITEMS_TAB = CREATIVE_MOD_TABS.register("opus_caementicium_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MORTAR_BUCKET.get())) // TODO Edit with another item
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OPUS_QUADRATUM.get()))
                     .title(Component.translatable("creative_tab.opuscaementicium.opus_caementicium_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.QUICKLIME.get());
                         output.accept(ModBlocks.POZZOLAN.get());
                         output.accept(ModItems.POZZOLAN_BALL.get());
                         output.accept(ModItems.MORTAR_BUCKET.get());
+                        output.accept(ModBlocks.OPUS_QUADRATUM.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
