@@ -32,6 +32,14 @@ public class ModBlocks {
                     .setId(BLOCKS.key("pozzolan")))
     );
 
+    public static final RegistryObject<Block> OPUS_QUADRATUM = registerBlock("opus_quadratum",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 1f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
+                    .setId(BLOCKS.key("opus_quadratum")))
+    );
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
