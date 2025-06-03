@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.QUICKLIME.get());
                         output.accept(ModBlocks.POZZOLAN.get());
                         output.accept(ModItems.POZZOLAN_BALL.get());
+                        output.accept(ModBlocks.CEMENTING_TABLE.get());
                         output.accept(ModItems.MORTAR_BUCKET.get());
                         output.accept(ModBlocks.OPUS_QUADRATUM.get());
                     }).build());

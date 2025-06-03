@@ -40,6 +40,12 @@ public class ModBlocks {
                     .setId(BLOCKS.key("opus_quadratum")))
     );
 
+    public static final RegistryObject<Block> CEMENTING_TABLE = registerBlock("cementing_table",
+            () -> new CementingTable(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .setId(BLOCKS.key("cementing_table")))
+    );
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
